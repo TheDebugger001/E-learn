@@ -15,47 +15,82 @@ class MyApp extends StatelessWidget{
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const CounterPage(),
+      home: Scaffold(
+        body: Column(
+          children: [
+            TopNavbar(),
+            Expanded(
+              child: Center(
+                child: Text("Other content here"),
+              ))
+          ],
+        ),
+      ),
     );
   }
 }
 
-class CounterPage extends StatefulWidget{
-  const CounterPage({super.key});
-
-  @override
-  State<CounterPage> createState() => _CounterPageState();
-}
-
-class _CounterPageState extends State<CounterPage>{
-  int count = 0;
-
-  void increment() {
-    setState(() {
-      count += 1;
-    });
-  }
-
+class  TopNavbar extends StatelessWidget{
+  const TopNavbar({super.key});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Counter Button"),
+    return Container(
+      height: 60,
+      padding: EdgeInsets.symmetric(horizontal: 10),
+      decoration: BoxDecoration(
+        color: Colors.blue,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black26,
+            blurRadius: 4,
+            offset: Offset(0, 4)
+          )
+        ]
       ),
-      body: Center(
-        child: Text(
-          "$count",
-          style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
-        ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            "My Todo",
+            style: TextStyle(color: Colors.white, fontSize: 20)
+            ),
+          Row(
+            children: [
+              Icon(Icons.search, color: Colors.white, size: 20,),
+              SizedBox(width: 20),
+              Icon(Icons.notifications, color: Colors.white),
+              SizedBox(width: 20,),
+              Icon(Icons.person, color: Colors.white,)
+            ],
+          )
+        ],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: increment,
-        child: const Icon(Icons.add),
-        ),
     );
   }
-
 }
+
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+        
+//       ),
+//       body: Center(
+//         child: Text(
+//           "$count",
+//           style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+//         ),
+//       ),
+
+//       floatingActionButton: FloatingActionButton(
+//         onPressed: increment,
+//         child: const Icon(Icons.add),
+//         ),
+//     );
+//   }
+
+// }
 
 
 
@@ -77,3 +112,20 @@ class _CounterPageState extends State<CounterPage>{
 //           ),
 //         ),
 //       ),
+
+
+// class CounterPage extends StatefulWidget{
+//   const CounterPage({super.key});
+
+//   @override
+//   State<CounterPage> createState() => _CounterPageState();
+// }
+
+// class _CounterPageState extends State<CounterPage>{
+//   int count = 0;
+
+//   void increment() {
+//     setState(() {
+//       count += 1;
+//     });
+//   }
