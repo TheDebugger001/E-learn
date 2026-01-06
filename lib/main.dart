@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(const MyApp());
 }
 
-
-class MyApp extends StatelessWidget{
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -20,58 +18,52 @@ class MyApp extends StatelessWidget{
           children: [
             Column(
               children: [
-                SizedBox(height: 150,),
+                SizedBox(height: 150),
                 Container(
                   height: 100,
                   width: 450,
                   color: Colors.red,
-                  child: const Center(
-                    child: Text(
-                      "HELLO WORLD"
-                    ),
-                  )
-                )
+                  child: const Center(child: Text("HELLO WORLD")),
+                ),
               ],
             ),
 
             Column(
               children: [
-                SizedBox(height: 100,),
+                SizedBox(height: 100),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  
+
                   children: [
                     Container(
                       height: 100,
                       width: 200,
                       color: Colors.blue,
-                      child: const Center(
-                        child: Text("Eric"),
-                      ),
+                      child: const Center(child: Text("Eric")),
                     ),
                     Container(
                       height: 100,
                       width: 200,
                       color: Colors.blue,
-                      child: const Center(
-                        child: Text("James"),
-                      ),
-                    )
+                      child: const Center(child: Text("James")),
+                    ),
                   ],
-                )
+                ),
               ],
             ),
 
             Column(
               children: [
-                SizedBox(height: 100,),
-                
+                SizedBox(height: 100),
+
                 Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Column(  //! This is the whole columns in part 1
+                    Column(
+                      //! This is the whole columns in part 1
                       children: [
-                        Column(  //! This is the whole row of the bottom part 1 top
+                        Column(
+                          //! This is the whole row of the bottom part 1 top
                           children: [
                             Row(
                               children: [
@@ -99,13 +91,13 @@ class MyApp extends StatelessWidget{
                                     ),
                                   ],
                                 ),
-
                               ],
                             ),
                           ],
                         ),
 
-                        Column(  //! This is the whole row of the bottom part 1 bottom
+                        Column(
+                          //! This is the whole row of the bottom part 1 bottom
                           children: [
                             Row(
                               children: [
@@ -133,16 +125,17 @@ class MyApp extends StatelessWidget{
                                     ),
                                   ],
                                 ),
-
                               ],
                             ),
                           ],
-                        )
+                        ),
                       ],
                     ),
-                    Column(  //! This is the whole columns in part 1
+                    Column(
+                      //! This is the whole columns in part 1
                       children: [
-                        Column(  //! This is the whole row of the bottom part 2 top
+                        Column(
+                          //! This is the whole row of the bottom part 2 top
                           children: [
                             Row(
                               children: [
@@ -162,13 +155,13 @@ class MyApp extends StatelessWidget{
                                     ),
                                   ],
                                 ),
-
                               ],
                             ),
                           ],
                         ),
 
-                        Column(  //! This is the whole row of the bottom part 2 bottom
+                        Column(
+                          //! This is the whole row of the bottom part 2 bottom
                           children: [
                             Row(
                               children: [
@@ -188,21 +181,19 @@ class MyApp extends StatelessWidget{
                                     ),
                                   ],
                                 ),
-
                               ],
                             ),
                           ],
-                        )
+                        ),
                       ],
-                    )
+                    ),
                   ],
-                )
+                ),
               ],
-            )
+            ),
           ],
         ),
-        )
+      ),
     );
   }
 }
-
