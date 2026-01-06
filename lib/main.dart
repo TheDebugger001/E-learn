@@ -15,22 +15,24 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Column(
               children: [
-                SizedBox(height: 150),
                 Container(
                   height: 100,
                   width: 450,
-                  color: Colors.red,
-                  child: const Center(child: Text("HELLO WORLD")),
+                  decoration: BoxDecoration(
+                    color: Colors.red,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: const Center(child: Text("HELLO GUERSCHOM")),
                 ),
               ],
             ),
 
             Column(
               children: [
-                SizedBox(height: 100),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
 
@@ -38,13 +40,19 @@ class MyApp extends StatelessWidget {
                     Container(
                       height: 100,
                       width: 200,
-                      color: Colors.blue,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                       child: const Center(child: Text("Eric")),
                     ),
                     Container(
                       height: 100,
                       width: 200,
-                      color: Colors.blue,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                       child: const Center(child: Text("James")),
                     ),
                   ],
@@ -54,8 +62,6 @@ class MyApp extends StatelessWidget {
 
             Column(
               children: [
-                SizedBox(height: 100),
-
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
@@ -74,7 +80,12 @@ class MyApp extends StatelessWidget {
                                         Container(
                                           height: 60,
                                           width: 100,
-                                          color: Colors.orange,
+                                          decoration: BoxDecoration(
+                                            color: Colors.orange,
+                                            borderRadius: BorderRadius.circular(
+                                              8,
+                                            ),
+                                          ),
                                           child: const Center(
                                             child: Text("Me"),
                                           ),
@@ -82,7 +93,12 @@ class MyApp extends StatelessWidget {
                                         Container(
                                           height: 60,
                                           width: 100,
-                                          color: Colors.orange,
+                                          decoration: BoxDecoration(
+                                            color: Colors.orange,
+                                            borderRadius: BorderRadius.circular(
+                                              8,
+                                            ),
+                                          ),
                                           child: const Center(
                                             child: Text("You"),
                                           ),
@@ -108,7 +124,12 @@ class MyApp extends StatelessWidget {
                                         Container(
                                           height: 60,
                                           width: 100,
-                                          color: Colors.grey,
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey,
+                                            borderRadius: BorderRadius.circular(
+                                              8,
+                                            ),
+                                          ),
                                           child: const Center(
                                             child: Text("Me"),
                                           ),
@@ -116,7 +137,12 @@ class MyApp extends StatelessWidget {
                                         Container(
                                           height: 60,
                                           width: 100,
-                                          color: Colors.grey,
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey,
+                                            borderRadius: BorderRadius.circular(
+                                              8,
+                                            ),
+                                          ),
                                           child: const Center(
                                             child: Text("You"),
                                           ),
@@ -146,9 +172,14 @@ class MyApp extends StatelessWidget {
                                         Container(
                                           height: 60,
                                           width: 200,
-                                          color: Colors.purple,
+                                          decoration: BoxDecoration(
+                                            color: Colors.purple,
+                                            borderRadius: BorderRadius.circular(
+                                              8,
+                                            ),
+                                          ),
                                           child: const Center(
-                                            child: Text("Me"),
+                                            child: Text("Jack"),
                                           ),
                                         ),
                                       ],
@@ -172,9 +203,14 @@ class MyApp extends StatelessWidget {
                                         Container(
                                           height: 60,
                                           width: 200,
-                                          color: Colors.purple,
+                                          decoration: BoxDecoration(
+                                            color: Colors.purple,
+                                            borderRadius: BorderRadius.circular(
+                                              8,
+                                            ),
+                                          ),
                                           child: const Center(
-                                            child: Text("Me"),
+                                            child: Text("Fiston"),
                                           ),
                                         ),
                                       ],
