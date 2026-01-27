@@ -17,10 +17,16 @@ class MyApp extends StatelessWidget {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            // TODO: This is the Calculator UI
+            // Container(
+            //   decoration: BoxDecoration(color: Colors.black87),
+            //   child: HomePage(),
+            // ),
+
+            // TODO: This is the Homepage for the phone UI
             Container(
-              decoration: BoxDecoration(color: Colors.black87),
-              child: HomePage(),
-            ),
+              
+            )
           ],
         ),
       ),
