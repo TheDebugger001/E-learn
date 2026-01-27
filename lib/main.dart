@@ -1,3 +1,4 @@
+import 'package:e_learn/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,13 +10,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-
     return MaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
+      title: 'Calculator',
       home: Scaffold(
         body: Column(
-          
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Container(
+              decoration: BoxDecoration(color: Colors.black87),
+              child: HomePage(),
+            ),
+          ],
         ),
       ),
     );
