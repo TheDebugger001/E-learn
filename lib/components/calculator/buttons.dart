@@ -8,12 +8,12 @@ class Buttons extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        Container(
+        SizedBox(
           height: 562,
 
           child: Column(
             children: [
-              const SizedBox(height: 55,),
+              const SizedBox(height: 55),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [

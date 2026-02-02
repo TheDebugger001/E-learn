@@ -1,4 +1,5 @@
-import 'package:e_learn/pages/home_page.dart';
+// import 'package:e_learn/pages/home_page.dart';
+import 'package:e_learn/pages/tour_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
 
             // TODO: This is the Homepage for the phone UI
             Container(
-              
+              child: TourPage(),
             )
           ],
         ),
