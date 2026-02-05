@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
             Container(
               color: Colors.blue,
               child: Homepage(),
-            )
+            ),
           ],
         ),
       ),
