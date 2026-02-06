@@ -24,7 +24,7 @@ class Body extends StatelessWidget {
                     width: 450,
                     height: 500,
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 60, 5, 5),
+                      color: const Color.fromARGB(255, 225, 223, 223),
                       borderRadius: BorderRadius.circular(15),
                     ),
 
@@ -171,6 +171,82 @@ class Body extends StatelessWidget {
                                 ),
                               ],
                             ),
+                          ),
+                        ),
+
+                        Padding(
+                          padding: EdgeInsets.only(top: 310),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              ElevatedButton(
+                                onPressed: () {},
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: Colors.blue,
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 40,
+                                    vertical: 20,
+                                  ),
+                                  elevation: 8,
+                                  shadowColor: Colors.black,
+                                ),
+                                child: Row(
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsets.only(right: 10),
+                                      child: Icon(
+                                        Icons.person_add_alt_1,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Follow",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              OutlinedButton(
+                                onPressed: () {},
+                                style: OutlinedButton.styleFrom(
+                                  // backgroundColor: Colors.blue,
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 40,
+                                    vertical: 20,
+                                  ),
+                                  shadowColor: Colors.black,
+                                ),
+                                child: Row(
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsets.only(right: 10),
+                                      child: Icon(
+                                        Icons.message,
+                                        color: Colors.blue,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Message",
+                                      style: TextStyle(
+                                        color: Colors.blue,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(),
+                          child: Text(
+                            "asdfasasfjlk asjfdoiwjefkldsalfsajdfoiaewk ljsafksafiuakjfasdflksajdflksajfdioawejoifasdjfkdsan vhkjsahfiodshfidsafiosaehfwaenfkjads hfkjsadhfs",
                           ),
                         ),
                       ],
